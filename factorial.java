@@ -6,5 +6,6 @@ class factorial {
         System.out.println("Enter a number");
         int a = sc.nextInt();
         System.out.println("Number is " + a);
+        sc.close();
     }
 }
