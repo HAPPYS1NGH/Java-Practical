@@ -14,7 +14,5 @@ class factorial {
             return 1;
         }
         return num * fact(num -1);
-        System.out.println("Number is " + a);
-        sc.close();
     }
 }
