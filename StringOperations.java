@@ -12,15 +12,17 @@ public class StringOperations {
             if(ch>=65 && ch<=90){
                 ch+=32;
             }
-            else if(ch>=90 && ch<=122){
+            else if(ch>=97 && ch<=122){
                 ch-=32;
             }
             changeCase+=ch;
         }
         String firstexchange= s.charAt(len-1)+s.substring(1,len-1) +s.charAt(0);
         String trimLast = s.substring(0, len -1);
-        System.out.println(changeCase);
-        System.out.println("Replace firxt character with last character "+ firstexchange);
+        System.out.println("The Upper Case String is "+ s.toUpperCase());
+        System.out.println("The Lower Case String is "+ s.toLowerCase());
+        System.out.println("The String with opposite Case "+changeCase);
+        System.out.println("Interchanging first character with last character "+ firstexchange);
         System.out.println("Trim last character "+trimLast);
         System.out.println("Length of String is " + len);
         System.out.println("The character at 3rd position is "+ s.charAt(3)
@@ -30,10 +32,10 @@ public class StringOperations {
         System.out.println("The index of 3rd character is "+ s.indexOf(s.charAt(2)));
         System.out.println("Enter another string for equality");
         String a=sc.nextLine();
-        equals(s, a);
+        equality(s, a);
         sc.close();
     }
-    static void equals(String s1 , String s2){
+    static void equality(String s1 , String s2){
         if(s1.equals(s2)){
             System.out.println("The Strings "+s1 + " and "+ s2 +" are equal");
         }
